@@ -1,0 +1,384 @@
+/*
+Theme Name:     Poetry Child
+Theme URI:      http://everythingindicates.wpibeta.org/
+Description:    Child theme for the Twenty Eleven theme 
+Author:         Words Pictures Ideas | Jay Demetillo | Adam Peterson | Brian Hildebrand
+Author URI:     http: //example.com/about/
+Template:       twentyeleven
+Version:        0.1.0
+*/
+
+@import url("css/reset.css");
+
+* {
+	font-family: "adobe-garamond-pro",sans-serif;
+}
+
+body{
+	background-color:#fff;
+	margin:0;
+}
+
+.isotope p{
+	width:300px!important;
+}
+
+h1#logo{
+	display:none;
+}
+
+a{
+	text-decoration:none;
+	color:#fff;
+	font-family: "alternate-gothic-no-3-d",sans-serif;
+}
+
+p {
+	margin-bottom: 1.625em!important;
+}
+
+::selection {
+	background: black;
+	color: white;
+	text-shadow: none;	
+}
+
+#branding {
+position: fixed;
+background:rgba(0,0,0,.9);
+z-index: 100;
+top: 0;
+width:100%;
+height: 25px;
+}
+
+#menu-primary li {
+float: left;
+list-style: none;
+width:20%;
+text-align:center;
+font-size: 19px;
+letter-spacing: 1.5px;
+text-transform: uppercase;
+list-style-type: none;
+padding:0;
+margin:2px 0 0 0;
+}
+
+ul{
+	/* chrome safari*/
+	-webkit-margin-before: 0!important;
+	-webkit-margin-after: 0!important;
+	-webkit-margin-start: 0px!important;
+	-webkit-margin-end: 0px!important;
+	-webkit-padding-start: 0px!important;
+	
+	/* ie*/
+	margin-before: 0!important;
+	margin-after: 0!important;
+	margin-start: 0px!important;
+	margin-end: 0px!important;
+	padding-start: 0px!important;
+	
+	/* firefox*/
+	-moz-margin-before: 0!important;
+	-moz-margin-after: 0!important;
+	-moz-margin-start: 0px!important;
+	-moz-margin-end: 0px!important;
+	-moz-padding-start: 0px!important;
+
+}
+
+
+
+
+/* Assistive text */
+.assistive-text {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+#access a.assistive-text:active,
+#access a.assistive-text:focus {
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+	color: #1982d1;
+	clip: auto !important;
+	font-size: 12px;
+	position: absolute;
+	text-decoration: underline;
+	top: 0;
+	left: 7.6%;
+}
+
+#page {
+	margin: 0 auto;
+	
+	position:relative;
+}
+
+.featured-image.photo img{
+	width: 960px;
+}
+
+.poem-title {
+	font-family: "alternate-gothic-no-3-d",sans-serif;
+	font-size: 45px;
+	text-align: center;
+	margin-top: 20px;
+	letter-spacing: 2px;
+	
+}
+
+
+.subtitle{
+		margin-bottom:50px;
+		text-align:center;
+}
+
+
+.author{
+	text-align:right;
+	margin-bottom:35px;
+	display:none;
+}
+
+
+.quote{
+		text-align: center;
+}
+
+
+
+article {
+	position: relative;
+	clear:both;
+}
+
+
+.entry-content.poem{
+	position: relative;
+}
+
+.column{
+	width:450px;
+	float:left;
+}
+
+
+p{
+	margin:auto;
+}
+
+.entry-content{
+	background-attachment: fixed!important;
+	padding-top:1000px;
+	background-repeat: no-repeat!important;
+	background-position: center !important;
+	
+	/*photographs not cropped*/
+	/*-webkit-background-size: contain;*/
+	/*photographs cropped*/
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.poem{
+	background:rgba(255,255,255,.9);
+	color:#000!important;
+	padding: 50px 0;
+}
+
+.poem-body-home{
+	margin:auto;
+	text-align:center;
+}
+
+.poem-body{
+	display:inline-block;
+	margin:auto;
+	text-align:left;
+	padding: 25px 15px 0 15px;
+}
+
+.outerWrapper{
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.innerWrapper{
+	max-width:800px;
+	margin:auto;
+}
+
+#secondary .innerWrapper{
+padding: 50px 0 200px 0;
+}
+
+.page-light-box{
+	background:rgba(255,255,255,.9);
+	position:fixed;
+	width:100%;
+	top:25px;
+	z-index:10;
+	left:-100%;
+	overflow: scroll;
+
+	-webkit-transition: left .7s ease-in-out;
+	-moz-transition: left .7s ease-in-out;
+	-o-transition: left .7s ease-in-out;
+	-ms-transition: left .7s ease-in-out;
+	transition: left .7s ease-in-out;
+}
+
+.page-light-box.active{
+
+	left:0;
+}
+
+.section-header{
+	margin-bottom:20px;
+	font-size:45px;
+	text-align:center;
+	font-family: "alternate-gothic-no-3-d",sans-serif;
+	letter-spacing: 1.5px;
+}
+
+.bio_info{
+	margin-bottom:20px;
+}
+
+.poem-titles a {
+	font-family: "adobe-garamond-pro",sans-serif;
+	color:#000;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.img_container.small{
+	height:200px;
+	width:200px;
+	
+}
+.img_container.large{
+	height:800px;
+	width:800px;
+	
+}
+.author_name{
+	font-family: "alternate-gothic-no-3-d", sans-serif;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+
+
+/* iPad [portrait + landscape] */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	.entry-content{
+		background-attachment:scroll!important;
+		padding-top:0;
+		background-repeat: no-repeat!important;
+		background-position: top left !important;
+		background-size:800px!important;
+		/*photographs not cropped*/
+		/*-webkit-background-size: contain;*/
+		/*photographs cropped*/
+	}
+	
+	img, object {
+		max-width: 100%;
+		height: auto!important;
+	}
+	
+	#menu-menu_mobile li {
+		float: left;
+		list-style: none;
+		width:25%;
+		text-align:center;
+		font-size: 19px;
+		letter-spacing: 1.5px;
+		list-style-type: none;
+		padding:0;
+		margin:2px 0 0 0;
+	}
+	
+	.poem-title{
+		font-size: 24px;
+		padding: 0 10px;
+	}
+	
+	#table-of-contents{
+		font-size:10px;
+	}
+	
+	.bio_info{
+		padding: 0 10px 0 10px;
+	}
+	
+	.author_name{
+		padding: 0 10px 0 10px;
+	}
+	
+	.poem-titles li{
+		padding: 0 10px 0 10px;
+	}	
+}
+
+
+@media only screen and (max-width: 640px) {
+	
+	.entry-content{
+		background-attachment:none!important;
+		padding-top:0px;
+		background-repeat: no-repeat!important;
+		background-position: center !important;
+
+		/*photographs not cropped*/
+		/*-webkit-background-size: contain;*/
+
+		/*photographs cropped*/
+	}
+	
+	img, object {
+	max-width: 100%;
+	height: auto!important;
+	}
+	
+	#menu-menu_mobile li {
+	float: left;
+	list-style: none;
+	width:25%;
+	text-align:center;
+	font-size: 19px;
+	letter-spacing: 1.5px;
+	list-style-type: none;
+	padding:0;
+	margin:2px 0 0 0;
+	}
+	
+	.poem-title{
+		font-size: 24px;
+		padding: 0 10px;
+	}
+	
+	#table-of-contents{
+		font-size:10px;
+	}
+	
+	.bio_info{
+		padding: 0 10px 0 10px;
+	}
+	
+	.author_name{
+		padding: 0 10px 0 10px;
+	}
+	
+	.poem-titles li{
+		padding: 0 10px 0 10px;
+	}
+}
+
